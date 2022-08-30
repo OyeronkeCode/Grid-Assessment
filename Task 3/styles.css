@@ -1,0 +1,45 @@
+    .container {
+      max-width: 800px;
+    }
+
+    /* Apply to all children of container */
+    .container>* {
+      padding: 10px;
+      color: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-areas:
+        'header header header'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'footer footer footer'
+        ;
+    }
+
+    header {
+      background-color: #f00;
+      grid-area: header;
+    }
+
+    nav {
+      background-color: #0f0;
+      grid-area: nav;
+    }
+
+    main {
+      background-color: #00f;
+      grid-area: main;
+      height: 200px;
+
+    }
+
+    footer {
+      background-color: #000;
+      grid-area: footer;
+    }
